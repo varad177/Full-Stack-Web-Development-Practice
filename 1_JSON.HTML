@@ -1,0 +1,58 @@
+<!-- is used for data transfer  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json tutorial</title>
+</head>
+
+<body>
+    <div class="container">
+        yhis is my container
+    </div>
+
+
+
+    <script>
+        let jsonobj = {
+            name: "varad",
+            channer: "varad code ",
+            friend: "ankita",
+            food: "cake"
+        }
+
+        console.log(jsonobj);
+
+
+        // so basically JSON jo hai vo ek object ko 
+        //ek string me conver kar deta hai 
+
+        // ab ye string jo hai vo ham transfer kar skte hai 
+        //aur ispar operation kr skte hai ;
+
+        let myjsonstr = JSON.stringify(jsonobj)
+
+        //JSON.stringfy ek string returmn kar deta hai ;
+        console.log(myjsonstr);
+
+        let myjson = myjsonstr.replace("ankita", "amruta");
+        console.log(myjson);
+
+        // ab string ko fir objecrt banana hai to 
+        newjson = JSON.parse(myjson);
+        console.log(newjson)
+
+        // parse jo hai vo ek json entity ko fir se object bana deta hai 
+        
+
+
+
+    </script>
+
+</body>
+
+</html>

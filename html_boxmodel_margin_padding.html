@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_boxmodel_margin_padding</title>
+    <style>
+        .contain {
+            background-color: rgb(198 224 0 / 51%);
+            border: 4px solid #2a8ea5;
+            /* we can give padding right left top and bittom                 */
+            /* padding: 10px; */
+            /* we can give padding as TRBL(top right bott left) */
+            padding: 12px 45px 17px 23px;
+            margin-left: 12px;
+            border-radius: 23px;
+
+
+
+        }
+
+        .cont {
+            background-color: rgb(198 224 0 / 51%);
+            border: 4px solid #2a8ea5;
+            /* just for giving same oadding in Y and X */
+            padding: 46px 63px;
+            margin-left: 12px;
+            border-radius: 219px;
+            box-sizing: border-box;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>html_boxmodel_margin_padding</h3>
+    <div class="contain">
+        <h3>
+            this is my html_boxmodel_margin_padding
+        </h3>
+        <p id="fp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt tempore accusamus mollitia eum
+            architecto maxime esse recusandae quibusdam, sed labore perspiciatis praesentium?
+        </p>
+    </div>
+    <div class="contain">
+        <h3>
+            this is my html_boxmodel_margin_padding
+        </h3>
+        <p id="sp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt tempore accusamus mollitia eum
+            architecto maxime esse recusandae quibusdam, sed labore perspiciatis praesentium?
+        </p>
+    </div>
+    <div class="cont">
+        <h3>
+            this is my html_boxmodel_margin_padding
+        </h3>
+        <p id="tp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt tempore accusamus mollitia eum
+            architecto maxime esse recusandae quibusdam, sed labore perspiciatis praesentium?
+        </p>
+    </div>
+</body>
+
+</html>

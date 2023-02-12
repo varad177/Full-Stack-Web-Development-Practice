@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ser interval and set timeout</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>ser interval and set timeout</h2>
+        the time is <span id="time">
+        
+        </span>
+    </div>
+
+
+    <script>
+        //settimeout---> se ek function kuchh time ke bad 
+        //run hota hai ,,, par ekbar hirun hota hai 
+
+        //setinterval---> se ek time interval me functions
+        //multiple time run ho jyata hai 
+
+
+        // function greet(name, age) {
+            // console.log("hello! good morning " + name + " your age is " + age);
+            // alert("good morning")
+        // // }
+        // timeOut = setTimeout(greet, 3000, "varad", 20);
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+    //   clearinterval= setInterval(greet, 5000);
+    //   clearInterval(clearInterval);
+
+function displaytime(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+
+}
+
+// setInterval(displaytime, 2000);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_before_and_after_pseudo_selector</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+
+
+        }
+
+        header::before {
+            background-image: url('pexels-leon-ardho-1552249.jpg');
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.5;
+
+
+
+        }
+
+
+        section {
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* border: 2px solid rgb(167, 164, 164); */
+            height: 344px;
+            justify-content: center;
+        }
+
+        .nav {
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 24px 23px;
+        }
+
+        h3 {
+            font-size: 4rem;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h3>welcome to coding world</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati consequuntur adipisci animi
+            itaque quas, maiores nam quidem natus sint laborum ab laudantium laboriosam doloribus fugiat nostrum
+            quod ad blanditiis non. Cum, esse quis.</p>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!-- html_flexbox is a one dimension layout method for laying out item 
+in rows and columns
+CSS flexbox is better way to align item in a container
+flexbox = flexible + box ; -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box tutorial</title>
+    <style>
+        .container {
+            height: 644px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* properties for flex 
+            display have to be flex
+            initialise the cintainer as a flex
+            flex direction : row jo ki by default hota hai 
+            flex direction : column jisase boxes column direction me girte hai
+             flex direction: row reverse se sare item reverse direction me aate hai 
+              */
+
+
+             
+             flex-direction: column; 
+            flex-direction: row-reverse;
+            flex-direction: row ; 
+             /* by default hota hai row  */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+
+
+
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid rgb(6, 37, 122);
+            margin: 10px;
+            padding: 3px;
+            height: 150px;
+            width: 150px;
+
+
+
+        }
+
+        #item-1 {
+            /* order: 1; */
+            /* order se box ka order decide hota hai */
+            /* flex-grow: 3; */
+            /* flex grow me jiski value jitni jyada hogi 
+            vo utna jyada bada hota  */
+            /* flex-shrink: 3; */
+            align-self: start;
+        }
+
+        #item-2 {
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: ; */
+            /* flex-basis: 320px; */
+            /* when a flex direction set to row the flex basis will control width */
+            /* /* when a flex direction set to column the flex basis will control height: ; */ 
+            /* flex: 2 2 220px; ye ek shortcut hai jise (flex-grow: , flex-shrink: ,flex-basis: ) hota hai */
+            align-self: flex-start;
+
+
+        }
+
+        #item-3 {
+            /* order: 3; */
+            align-self: flex-end;
+            /* right end me box jyata hai */
+
+        }
+
+        /* #item-4 {}
+
+        #item-5 {}
+
+        #item-6 {} */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <!-- <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div> -->
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object in js</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>this is math object tut</h1>
+    </div>
+    <script>
+
+        //printing the math object 
+        let m = Math;
+        console.log(m)
+
+        //printing the constants  math object 
+        console.log("the value of math.e " + Math.E)
+        console.log("the value of math.PI " + Math.PI)
+
+
+        // function of math object
+        let a = 34.755673;
+        let b = 76;
+        console.log("the value of a and b is ", a, b);
+        console.log("the rounded value of a and b is ", Math.round(a), Math.round(b));
+        console.log("3 raised to power 3 ", Math.pow(3, 3));
+        console.log("sqrt of 49 nd 50 ", Math.sqrt(49), Math.sqrt(50));
+
+        // ceil and floor
+
+        console.log("5.8 rounded up to nearest integer is ", Math.ceil(5.8))
+        console.log("5.8 rounded down to nearest integer is ", Math.floor(5.8))
+
+        // absolute value 
+        console.log("the absolute value of -5.8 is  ", Math.abs(-5.8))
+
+        // //trignometric function
+
+        console.log("the value of sin (PI) is ", Math.sin(Math.PI / 2))
+        console.log("the value of cos (PI) is ", Math.cos(Math.PI / 2))
+        console.log("the value of sin (PI) is ", Math.sin(Math.PI / 2))
+
+        // max and min
+
+        console.log("the max value from 45, 56, 87, 99 is  ", Math.max(45, 56, 87, 99));
+        console.log("the min value from 45, 56, 87, 99 is  ", Math.min(45, 56, 87, 99));
+
+
+        // log
+
+        console.log("the max value og log(10) is  ", Math.log(45));
+
+        //generating the random number
+
+        console.log("the random number is ", Math.random());
+
+        let a1 = 1;
+        let b1 = 100;
+        console.log("the random number from 1- 100 ",a1+(b1-a1)*Math.random());
+
+        let a2 = 50;
+        let b2 = 60;
+
+        let c = a2+(b2-a2)*Math.random();
+        console.log("the random number from 1- 100 ",Math.round(c));
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation_and_keyframes</title>
+    <style>
+        .box {
+            background-color: rgb(15, 223, 255);
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            /* justify-content: center; */
+            position: relative;
+            /* page pe move hone ki liye hame position relative kerta padta hai  */
+
+            /* animation-name: varad; */
+            animation-name: varad1;
+            /* hame pehle animation ka naam dena padta hai  */
+
+            animation-duration: 4s;
+            /* uske bad animatiion kitni der tak chalega i.e duration  */
+            /* animation-delay: 3s; */
+            /* animation delay ek propertis hai jisme ek time delay ke bad perticular animation 
+            chalu ho jyata hai  */
+
+            animation-iteration-count: 1;
+            /* aur fir animation kitni bar chalega  */
+            animation-iteration-count: infinite;
+            /* animation rukana na ho to ham infinite likh skte hai  */
+
+
+            /* animation-fill-mode: forwards; */
+            /* forward karneke baad anumation end result pe jaye ruk jayeg a */
+
+
+            /* animation-fill-mode: alternate; */
+            /* alternate pe animation to complete hoga par 
+            firse starting position pe aake ruk jayega  */
+
+
+            animation-timing-function: easse-out;
+            /* ease in se slow se fast hota hai animation */
+            /* aisehi ham ease out bhi likh skte hai 
+            jisme pehle fast hoga slow fast hoga  */
+
+
+            /* animation-direction: reverse; */
+
+
+            /* animation-direction: alternate; */
+        }
+
+        @keyframes varad1 {
+            0% {
+                top: 0px;
+                left: 0%;
+
+            }
+
+            25% {
+                top: 250px;
+                left: 0%;
+                background-color: rgb(48, 165, 42);
+            }
+
+            50% {
+                top: 250px;
+                left: 83%;
+                background-color: rgb(241, 71, 9);
+            }
+
+            75% {
+                top: 0px;
+                left: 83%;
+                background-color: rgb(165, 42, 163);
+            }
+
+            100% {
+                top: 0px;
+                left: 0%;
+                background-color: rgb(251, 255, 28);
+            }
+
+        }
+
+        @keyframes varad {
+            from {
+                width: 200px;
+                height: 200px;
+
+            }
+
+            to {
+                width: 400px;
+                width: 1400px;
+                background-color: rgb(255, 0, 234);
+            }
+
+        }
+
+
+        .container {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+
+</body>
+
+</html>

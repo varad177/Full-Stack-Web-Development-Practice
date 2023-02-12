@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>js string function</h1>
+    <script>
+        var v = "this is a string"
+        console.log(v);
+        var position = v.indexOf('is')
+        console.log(position);
+        position = v.lastIndexOf('is')
+        console.log(position);
+        //sunstring from a string
+        var sub = v.slice(1, 6)
+        console.log(sub);
+        var sub = v.substring(1, 6)
+        console.log(sub);
+        //last wala bhi consider karta hai
+        var sub = v.substr(1, 6)
+        console.log(sub);
+        //replacing
+        var replace = v.replace('string','varad');
+        console.log(replace);
+
+        var a = "apple"
+        console.log(a.toUpperCase());
+        var c = "CAT"
+        console.log(c.toLowerCase());
+        var newstring = a.concat(' i want')
+        console.log(newstring);
+        var stringwithwhitespaces = "           this   contains             whitespaces"
+        console.log(stringwithwhitespaces);
+        //start or end se spaces hata deta hai
+        console.log(stringwithwhitespaces.trim());
+
+        var char1= a.charAt(3);
+        console.log(char1);
+        var char1= a.charCodeAt(3);
+        console.log(char1);
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

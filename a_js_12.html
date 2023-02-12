@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to Events</title>
+
+    <style>
+
+        #btn{
+            margin-top: 23px;
+            padding: 14px 16px;
+            background-color: lightblue;
+            border: 6px solid rgb(54, 47, 255);
+            cursor: pointer;
+            margin-left: 34px;
+        }
+
+        #btn:hover{
+            background-color: rgb(0, 0, 0);
+            height: 48px;
+            color: white;
+            width: 148px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Events and Listening to Events</h2>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga tempora nisi inventore optio eligendi quae
+        maiores assumenda reprehenderit! Magni quidem architecto, ratione natus molestias odit quasi quam ut velit
+        beatae laudantium excepturi voluptate, quibusdam eligendi a illum? Eum nesciunt minima sunt quam, facere ipsa
+        iusto aliquid totam, animi nobis adipisci maiores numquam esse dolor laborum, soluta impedit exercitationem sit.
+        Eum accusamus accusantium ratione consequatur qui similique eveniet minima earum? Accusamus, excepturi. Eius,
+        consequuntur. Quod fuga blanditiis reprehenderit fugiat rem consequuntur modi possimus dolorem corporis hic
+        quisquam debitis a ipsa itaque labore, repudiandae quia veritatis in impedit, voluptate iusto assumenda
+        doloremque provident voluptatibus. Nihil sunt dicta, labore est ipsum doloribus distinctio pariatur tempore
+        alias autem a corporis, vitae aliquam ex nemo, unde ducimus id atque reprehenderit porro eum ipsam incidunt!
+        Molestias reiciendis expedita voluptate corporis, eius perferendis excepturi voluptas esse perspiciatis,
+        laboriosam fugit earum non. Eligendi itaque hic odit perferendis, aut similique dolore? Magnam fuga harum dolor
+        ipsam ex est illo possimus, aspernatur rem perferendis, recusandae similique! Minima animi distinctio iusto
+        dolore! Cum sequi numquam quis recusandae iure reprehenderit, earum minima. Quae, atque magni veniam non
+        accusantium quasi nihil aspernatur ex dolorum ipsum quibusdam assumenda repellat soluta exercitationem tenetur
+        asperiores delectus sunt laboriosam fugit excepturi autem sapiente ipsa omnis doloremque. Eaque doloribus
+        quisquam numquam corporis laboriosam dolores ea facilis neque at! Natus cupiditate iure possimus atque quod
+        vitae reiciendis perspiciatis repellat assumenda laborum.
+
+        </p>
+    </div>
+    <button id="btn" onclick="togglehide()">showhide</button>
+    <!-- <button id="btn" onmousemove="togglehide()">showhide</button> -->
+    <!-- <button id="btn" ondblclick="togglehide()">showhide</button> -->
+    <!-- <button id="btn" oncontextmenu="togglehide()">showhide</button> -->
+    <!-- <button id="btn" onmousewheel="togglehide()">showhide</button> -->
+
+    <script>
+//yaha pr ek events hota hai 
+//jisme events hone ke bad events lisrten hota hai 
+//aur vo perticular kaam ho jyata hai 
+//for example click
+
+
+//browser events 
+//1- click
+//contextmenu
+//mouseover key
+//mouseout key
+//mouse down
+// mouse up
+//mouse move
+
+//submit
+//focus
+
+
+//dom content loaded
+//transition end
+
+let para = document.getElementById("para");
+para.addEventListener('mouseover',function run(){
+    alert('mouse is inside')
+})
+para.addEventListener('mouseout',function run(){
+    alert('mouse is outside')
+})
+
+function togglehide(){
+    let btn = document.getElementById("btn");
+    let para = document.getElementById("para");
+    
+    if(para.style.display!="none"){
+        para.style.display='none';
+    }
+    else{
+        para.style.display='block';
+    }
+}
+    </script>
+</body>
+
+</html>

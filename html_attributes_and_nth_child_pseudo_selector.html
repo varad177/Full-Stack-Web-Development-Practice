@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_attributes_and_nth_child_pseudo_selector</title>
+    <style>
+        input {
+            display: block;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgb(233, 255, 220);
+            display: block;
+            width: 250px;
+            margin: auto;
+
+        }
+
+        /* ab muze vo input select karna hai jiska type text hai  */
+        input[type='text'] {
+
+            border: 2px darkblue solid;
+        }
+
+        /* istarah ham ek perticular type or kuchha bhi target kar skte :horizontal */
+        input[value='submit'] {
+            border: 2px rgb(20, 20, 240) solid;
+
+        }
+
+        placeholder {
+            color: aqua;
+
+        }
+
+        /* nth child pseudo selector dekhete hai */
+        li:nth-child(3) {
+            color: blueviolet;
+        }
+
+        li:nth-child(2n+0) {
+            /* isme ham nth form me formula lagate hai  */
+            color: rgb(201, 11, 8);
+        }
+        li:nth-child(odd){
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="formcontrol">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item-1</li>
+
+            <li class="item" id="item2">item-2</li>
+            <li class="item" id="item3">item-3</li>
+            <li class="item" id="item4">item-4</li>
+            <li class="item" id="item5">item-5</li>
+            <li class="item" id="item6">item-6</li>
+            <li class="item" id="item7">item-7</li>
+            <li class="item" id="item8">item-8</li>
+            <li class="item" id="item9">item-9</li>
+            <li class="item" id="item10">item-10</li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>

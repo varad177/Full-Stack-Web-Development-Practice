@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box_shadow</title>
+    <style>
+        .container {
+            display: flex;
+
+
+        }
+
+        .card {
+            padding: 22px 20px;
+            /* border: 2px solid red; */
+            margin: 23px 20px;
+            box-shadow: 5px 10px rgb(24, 130, 236);
+            /* is tarah ham box shadow de skte hai  */
+            background-color: rgb(0, 255, 225);
+
+        }
+
+        #card1 {
+            box-shadow: 5px 10px 20px 10px rgb(24, 104, 236);
+            /* isme 4th number hai  spreading radius  */
+        }
+
+        #card2 {
+            /* box-shadow: -7px -10px rgb(24, 104, 236); */
+            /* - sigh dene ke bad hame opposite shadow milti hai  */
+            /* box shadow ko ham andar ki taraf ghusane ke liye ham inset ka use karte hai */
+            box-shadow: inset 7px 10px 15px rgb(24, 104, 236);
+        }
+
+        #card3 {
+            box-shadow: 5px 10px 20px rgb(24, 104, 236);
+            /* isme 1st number y - shadow hai 2nd number x shadow hai 
+                aur 3rd number blur radius hai  */
+        }
+        #card2 h2{
+            text-shadow: 3px 4px 3px rgb(154, 8, 191);
+        }
+        #card3 h2{
+            text-shadow: 3px 4px 3px rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card-1</h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fuga veniam nesciunt magnam consequatur
+                pariatur totam laudantium rem. Libero, eius doloremque. Voluptates nemo necessitatibus modi rem ullam,
+                sint ipsum temporibus blanditiis iste quis nihil.
+            </p>
+        </div>
+        <div class="card" id="card2">
+            <h2>this is info</h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fuga veniam nesciunt magnam consequatur
+                pariatur totam laudantium rem. Libero, eius doloremque. Voluptates nemo necessitatibus modi rem ullam,
+                sint ipsum temporibus blanditiis iste quis nihil.
+            </p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card-3</h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fuga veniam nesciunt magnam consequatur
+                pariatur totam laudantium rem. Libero, eius doloremque. Voluptates nemo necessitatibus modi rem ullam,
+                sint ipsum temporibus blanditiis iste quis nihil.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

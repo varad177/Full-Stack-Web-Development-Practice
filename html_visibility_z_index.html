@@ -1,0 +1,72 @@
+<!--  z-index 
+agar koi elemenrt ek element ke upr aata hai 
+to kausa element dikhega ye x index taiy karti hai 
+z index sif positioned element pe kam karti hai 
+isme sirf vlue dene padte hai 
+jiske value jyada hota hai vo upar atta hai  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_visibility_z_indext</title>
+    <style>
+        .box {
+            height: 170px;
+            width: 170px;
+            border: solid 2px black;
+
+        }
+
+        #box1 {
+            background-color: green;
+            position: relative;
+            top: 49px;
+
+        }
+
+        #box2 {
+
+            background-color: yellow;
+            position: relative;
+            top: 38px;
+            z-index: 36;
+            /* jisko upar lana hai uska z index value jiske upar lana hai uske z indev value se jyada hona chahiye */
+            /* visibility: visible; */
+            /* visibility: visible; se kuchh farak nahi padta  */
+
+        }
+
+        #box3 {
+            background-color: red;
+            visibility: hidden;
+            /* visibility: hidden; se sirf element hide ho jata hai  par uski jaga vaha rehti hai */
+            display: none;
+            /* display: none; se pura ka pura element hi gayab ho jata hai */
+
+
+        }
+
+        #box4 {
+            background-color: rgb(26, 193, 215);
+            position: relative;
+            top: -13px;
+            z-index: 35;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>html_visibility_z_index</h3>
+
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

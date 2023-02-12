@@ -1,0 +1,66 @@
+<!-- VARIOUS WAYS TO ACHIEVE RESPONSIVE em_rem_vh_vw_units_and_responsive_design -->
+<!-- 1-Setting up the view-port -->
+<!-- 2-use max-width/max-height -->
+<!-- 3-Using CSS media Queries -->
+<!-- 4-Using rem/vh/vw over pixels -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em_rem_vh_vw_units_and_responsive_design</title>
+    <style>
+        html{
+            font-size: 15px;
+        }
+        .container{
+            /* font-size: 10px; */
+            border: 2px solid red;
+            width: 400px;
+            
+            /* height: 300px; */
+            height: 100vh;
+            
+            /* jitna view port dikh raha hai utni height legi */
+            width: 50vw;
+            width: 100vw;
+
+            /* vh-> viesport height */
+            /* vw->viewport width */
+            /* width to percentage me set kar skte hai  */
+            /* par hieght ke liye ham ye use kar skte hai */
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* font-size: 3em; */
+            /* parent class ka multiple font size leta hai (em)
+            means --> agar parents ka font size 10 hai hai aur yaha 3em hai size hai 
+            to size = 10*3=30 ho jayega  */
+            /* padding: 3em; */
+            /* padding ye font size ka multiple ho jyata hai  */
+        /* matlab yaha par font size hoga 30*3=90 */
+        }
+        #second{
+            /* font-size: 3rem; */
+            /* rem unit html ko consider karta hai aur size change karta hai
+             */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">this is first heading</h1>
+        <h1 id="second">this is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+    </div>
+
+
+</body>
+
+</html>
